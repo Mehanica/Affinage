@@ -1,0 +1,221 @@
+.main-first-block {
+  width: 100%;
+  height: 250px;
+  background-color: $color-gallery-background;
+
+
+  @media (min-width: $width-desktop) {
+    min-height: 100vh;
+    width: 50%;
+    background-color: $color-main-secondary-background;
+    box-shadow: -3px 2px 35px 0px rgba(0, 0, 0, 0.07) inset;
+  }
+}
+
+.main-first-block__wrapper {
+  @media (min-width: $width-desktop) {
+    min-height: 100vh;
+    width: 600px;
+    height: 616px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    margin-left: auto;
+    margin-top: 184px;
+  }
+}
+
+.main-first-block__letter {
+  position: absolute;
+  top: 9px;
+  left: 20px;
+  font-size: $font-size-big;
+  color: $color-main-text;
+
+  @media (min-width: $width-desktop) {
+    top: 26px;
+    left: calc(50% - 686px);
+  }
+}
+
+.main-first-block__number-larger {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    position: absolute;
+    top: 128px;
+    left: calc(50% - 163px);
+    opacity: 0.5;
+    font-family: "Geometria", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: $font-size-medium;
+    font-weight: 600;
+    letter-spacing: 3.8px;
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+
+.main-first-block__small-numbers {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    font-family: "Geometria", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: $font-size-smaller;
+    font-weight: 300;
+  }
+}
+
+.main-first-block__number-1 {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 181px;
+    left: calc(50% - 497px);
+    z-index: 4;
+  }
+}
+
+.main-first-block__number-3 {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 261px;
+    left: calc(50% - 497px);
+    z-index: 4;
+  }
+}
+
+.main-first-block__circle {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    left: calc(50% - 134px);
+    top: 216px;
+    z-index: 4;
+  }
+}
+
+.main-first-block__circle p {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    width: 53px;
+    color: $color-invert-text;
+    font-family: "Geometria", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: $font-size-small;
+    font-weight: 400;
+    letter-spacing: 2.14px;
+    text-transform: uppercase;
+  }
+}
+
+.main-first-block__slogan {
+  position: absolute;
+  top: auto;
+  bottom: 320px;
+  left: -19px;
+  font-size: $font-size-smallest;
+  line-height: 10px / $font-size-smallest;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.5;
+  transform: rotate(270deg);
+  z-index: 6;
+
+  @media (min-width: $width-desktop) {
+    bottom: auto;
+    top: 482px;
+    left: calc(50% - 438px);
+    z-index: 8;
+  }
+}
+
+.main-first-block__small-letters {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
+}
+
+.main-first-block__letter-a {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 741px;
+    left: calc(50% - 453px)
+  }
+}
+
+.main-first-block__letter-1f {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 706px;
+    left: calc(50% - 388px);
+  }
+}
+
+.main-first-block__letter-2f {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 750px;
+    left: calc(50% - 324px);
+  }
+}
+
+.main-first-block__letter-i {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 722px;
+    left: calc(50% - 265px);
+  }
+}
+
+.main-first-block__letter-n {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 762px;
+    left: calc(50% - 199px);
+  }
+}
+
+.main-first-block__trapeze {
+  position: absolute;
+  top: -43px;
+  right: -128px;
+
+  @media (min-width: $width-desktop) {
+    top: 317px;
+    right: calc(50% + 141px);
+    transform: rotate(-90deg);
+    z-index: 9;
+  }
+}
+
+.main-first-block__icon-black {
+  position: absolute;
+  top: auto;
+  bottom: 318px;
+  left: 266px;
+
+  @media (min-width: $width-desktop) {
+    bottom: auto;
+    top: 693px;
+    left: calc(50% - 530px);
+  }
+}
+
+.main-first-block__icon-white {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    position: absolute;
+    top: 782px;
+    left: calc(50% - 271px);
+  }
+}

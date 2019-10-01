@@ -1,0 +1,110 @@
+.main-second-block {
+  flex-grow: 1;
+  width: 100%;
+  height: 318px;
+  background-color: $color-gallery-background;
+
+  @media (min-width: $width-desktop) {
+    width: 50%;
+    min-height: 800px;
+    background-color: $color-main-background;
+  }
+}
+
+.main-second-block__number {
+  position: absolute;
+  top: auto;
+  bottom: 22px;
+  right: 16px;
+  font-family: "Geometria", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-size: $font-size-medium-small;
+  font-weight: 400;
+  letter-spacing: 2px;
+  z-index: 7;
+
+  @media (min-width: $width-desktop) {
+    top: 551px;
+    right: calc(50% - 383px);
+    font-size: $font-size-large;
+    letter-spacing: 4.4px;
+    z-index: 8;
+  }
+
+  &::before {
+    @media (min-width: $width-desktop) {
+      content: "7";
+      position: absolute;
+      font-size: 17px;
+      top: 48px;
+      left: 54px;
+    }
+  }
+}
+
+.main-second-block__number span {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    position: absolute;
+    font-size: $font-size-large;
+    top: -6px;
+    left: 55px;
+  }
+}
+
+.main-second-block__icon-black {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    position: absolute;
+    top: 735px;
+    left: calc(50% + 478px);
+  }
+}
+
+.main-second-block__icon-white {
+  position: absolute;
+  bottom: 30px;
+  left: 42px;
+  z-index: 11;
+
+  @media (min-width: $width-desktop) {
+    bottom: auto;
+    top: 754px;
+    left: calc(50% + 243px);
+  }
+}
+
+.main-second-block__small-letters {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
+}
+
+.main-second-block__small-letter-a {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 721px;
+    left: calc(50% + 210px);
+  }
+}
+
+.main-second-block__small-letter-g {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 727px;
+    left: calc(50% + 311px);
+  }
+}
+
+.main-second-block__small-letter-e {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 754px;
+    left: calc(50% + 423px);
+  }
+}

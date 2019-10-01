@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Affinage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div style="display: none">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <main class="page-main">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toogle" type="button">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/burger-frame.svg">
+            <img src="img/burger.svg" width="20" height="14" alt="кнопка меню">
+          </picture>
+          Открыть меню
+        </button>
+      </nav>
+      <h1 class="page-main__title">Affinage</h1>
+      <section class="main-first-block">
+        <div class="main-first-block__wrapper">
+          <p class="main-first-block__letter">A</p>
+          <p class="main-first-block__number-larger">51</p>
+          <p class="main-first-block__small-numbers">
+            <span class="main-first-block__number-1">(1)</span>
+            <span class="main-first-block__number-3">(3)</span>
+          </p>
+          <div class="main-first-block__circle">
+            <p>Ural 03</p>
+          </div>
+          <svg class="main-first-block__trapeze" width="282" height="177">
+            <use xlink:href="#icon-trapeze"></use>
+          </svg>
+          <p class="main-first-block__slogan">очень хороший слоган</p>
+          <svg class="main-first-block__icon-black" width="28" height="23">
+            <use xlink:href="#icon-affinage-symbol-black"></use>
+          </svg>
+          <p class="main-first-block__small-letters">
+            <span class="main-first-block__letter-a">A</span>
+            <span class="main-first-block__letter-1f">F</span>
+            <span class="main-first-block__letter-2f">F</span>
+            <span class="main-first-block__letter-i">I</span>
+            <span class="main-first-block__letter-n">N</span>
+          </p>
+          <svg class="main-first-block__icon-white"width="28" height="23">
+            <use xlink:href="#icon-affinage-symbol-white"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="main-second-block">
+        <div class="main-second-block__wrapper">
+          <p class="main-second-block__number">13
+            <span>_</span>
+          </p>
+          <p class="main-second-block__small-letters">
+            <span class="main-second-block__small-letter-a">A</span>
+            <span class="main-second-block__small-letter-g">G</span>
+            <span class="main-second-block__small-letter-e">E</span>
+          </p>
+          <svg class="main-second-block__icon-white" width="28" height="23">
+              <use xlink:href="#icon-affinage-symbol-white"></use>
+          </svg>
+          <svg class="main-second-block__icon-black" width="28" height="23">
+            <use xlink:href="#icon-affinage-symbol-black"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="slider">
+        <p class="slider__large-letters">
+            <svg class="slider__large-letter-a" width="54" height="108">
+              <use xlink:href="#icon-a"></use>
+            </svg>
+            <svg class="slider__large-letter-g" width="54" height="108">
+              <use xlink:href="#icon-g"></use>
+            </svg>
+            <svg class="slider__large-letter-e" width="43" height="108">
+              <use xlink:href="#icon-e"></use>
+            </svg>
+          </p>
+
+        <div class="slider__item slider__item--back">
+          <img src="img/arcs.jpg" alt="фото арок">
+        </div>
+        <div class="slider__item slider__item--front">
+          <img src="img/moto.jpg" alt="фото мотоцикла">
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn--prev" type="button">
+            <svg width="20" height="36">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+            <span>Предыдущее фото</span>
+          </button>
+          <button class="slider__btn slider__btn--next" type="button">
+              <svg width="20" height="36">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            <span>Следующее фото</span>
+          </button>
+        </div>
+      </section>
+      <div class="page-main__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <img src="img/logo.svg" width="146" height="146" alt="логотип">
+        </picture>
+      </div>
+    </main>
+
+    <script src="js/slider.js"></script>
+  </body>
+</html>

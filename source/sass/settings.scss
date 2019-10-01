@@ -1,0 +1,56 @@
+// colors
+$color-main-text:#000000;
+$color-invert-text: #ffffff;
+$color-gallery-background: #F7E611;
+$color-main-background: #ffffff;
+$color-main-secondary-background: #fefefe;
+
+
+//fonts
+$font-size-biggest: 140px;
+$font-size-bigger: 80px;
+$font-size-large: 45px;
+$font-size-big: 34px;
+$font-size-medium: 28px;
+$font-size-main: 25px;
+$font-size-medium-small: 20px;
+$font-size-small: 17px;
+$font-size-smaller: 14px;
+$font-size-smallest: 9px;
+
+
+//width
+$width-tablet: 768px;
+$width-desktop: 1150px;
+$width-only-mobile: 767px;
+
+//retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// mixins
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@mixin centering {
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $width-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1050px;
+  }
+}
